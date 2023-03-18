@@ -10,23 +10,26 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="solapaSuperior">
-        <div class="textoImagen">
-            <div class="textoSuperior">
-                <h1>Sucks Indumentaria</h1>
-                <h2>Tu lugar,tu estilo</h2>
+    <header class="container-fluid-header">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Sucks Indumentaria
+              </a>
             </div>
-            <div class="imagenCentro">
-                <img src="./assets/img/logo.jpg" width=100px height=100px>
-            </div>
-        </div>
-        <nav class="navegacion">
-            <div class="listaNav">
-                <a href="#">Inicio</a>
-                <a href="./pages/productos.html">Productos</a>
-                <a href="./pages/nosotros.html">Nosotros</a></li>
-            </div>
-        </nav>
+          </nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+          </ul>
     </header>
     <main>
         <section class="coleccionSucks">

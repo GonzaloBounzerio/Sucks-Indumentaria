@@ -9,61 +9,23 @@
 
 a{
     color: black;
+    text-decoration: none;
 }
 
 body{
     background-color: rgba(250, 235, 215, 0.473);
 }
 
-.solapaSuperior{
+.container-fluid-header{
     z-index: 100;
     position: sticky;
-    top:0;   
-    background-color: rgb(235, 235, 235);
-    height:120px;
-    box-shadow: 0 0 10px 0;
+    top:0;
+    height: 15vh;   
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    background-color: rgba(164, 219, 201, 0.74);
 }
 
-.imagenCentro{ /*imagen*/
-    box-shadow: 0 0 10px 0;
-    margin-left: 10px;
-    order:-1;
-    margin-right: 10px;
-}
-
-.textoImagen{
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    align-items: start;
-    width: 500px;
-}
-
-.textoSuperior{
-    display: flex;
-    align-items: center;
-    width: 50   0px;
-    flex-wrap: wrap;
-}
-
-.textoSuperior h1{
-    font-size: 40px;
-}
-
-.textoSuperior h2{
-    font-size: 35px;
-}
-
-.navegacion{
-    margin-right: 20px;
-}
-
-.listaNav{
-    font-size: 30px;
-}
 
 .coleccionSucks,.fundadores{
     margin-top: 25px;
@@ -103,7 +65,6 @@ footer{
     margin: 5px 0 5px 0;
     font-size: 15px;
 }
-
 /*pagina productos*/
 
 .seccionProducto{
