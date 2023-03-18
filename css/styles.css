@@ -1,0 +1,232 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+body{
+    background-color: rgba(250, 235, 215, 0.473);
+}
+
+.solapaSuperior{
+    z-index: 100;
+    position: sticky;
+    top:0;   
+    background-color: rgb(235, 235, 235);
+    height:120px;
+    box-shadow: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagenCentro{ /*imagen*/
+    box-shadow: 0 0 10px 0;
+    margin-left: 10px;
+    order:-1;
+    margin-right: 10px;
+}
+
+.textoImagen{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: start;
+    width: 500px;
+}
+
+.textoSuperior{
+    display: flex;
+    align-items: center;
+    width: 50   0px;
+    flex-wrap: wrap;
+}
+
+.textoSuperior h1{
+    font-size: 40px;
+}
+
+.textoSuperior h2{
+    font-size: 35px;
+}
+
+.navegacion{
+    margin-right: 20px;
+}
+
+.listaNav{
+    font-size: 30px;
+}
+
+.coleccionSucks,.fundadores{
+    margin-top: 25px;
+    text-align: center;
+}
+.titulo{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.imagenesIndex img{
+    box-shadow: 0 0 20px 0;
+}
+
+.botonProductos , .botonNosotros{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 2px 10px;
+    border: 3px solid darkkhaki;
+    border-radius: 70px;
+}
+
+footer{
+    margin-top: 20px;
+    display: block;
+    border-top: 3px dotted rgb(184, 130, 255);
+    text-align: center;
+    background-color: rgb(235, 235, 235);;
+}
+
+.frase{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.listaNavFooter{
+    margin: 5px 0 5px 0;
+    font-size: 15px;
+}
+
+/*pagina productos*/
+
+.seccionProducto{
+    margin:5px auto;
+    background-color: rgba(240, 203, 156, 0.705);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    box-shadow: 0 0 10px 0;
+}
+
+.encabezadoProductos{
+    text-align: right;
+    margin-top:30px;
+    width: 80%;
+}
+
+.encabezadoProductos h2{
+    font-size: 25px;
+}
+
+.encabezadoProductos h1{
+    font-size: 30px;
+}
+
+.articulos{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articulo{
+    margin:25px auto;
+}
+
+.imagenArticulo img{
+    box-shadow: 0 0 20px 0;
+}
+
+.tituloArticulo,.valorArticulo{
+    width: 230px;
+    font-size: 20px;
+}
+
+/*fin pagina productos*/
+
+/*pagina nosotro*/
+.textoLargo{
+    font-size:20px;
+    margin:20px;
+    text-align: center;
+}
+
+.fondoNosotros{
+    margin:5px auto;
+    background-color: rgba(240, 203, 156, 0.705);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    box-shadow: 0 0 10px 0;
+}
+
+.textoLargo h3{
+    font-size: 30px;
+}
+
+.contenedorImagenMedioTexto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:25px auto;
+    width: 700px;
+    height: 320px;
+}
+
+.imagenMedioTexto img{
+    box-shadow: 0 0 20px 0;
+}
+
+/*fin pagina nosotros*/
+
+/*pagina contacto*/
+
+.contactPage{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    margin:5px auto;
+    width: 80vw;
+    box-shadow: 0 0 10px 0;
+    background-color: rgba(240, 203, 156, 0.705);
+}
+
+
+.iconosContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconoContacto{
+    margin:0 10px;
+}
+
+.contenedorMapaContacto,.contenedorRedesContacto{
+    display:flow;
+    flex-direction: column;
+}
+
+.mapaContacto iframe{
+    margin:20px auto;
+    box-shadow: 0 0 20px 0;
+}
+
+.logoContacto img{
+    box-shadow: 0 0 20px 0;
+}
+
+/*fin pagina contacto*/
