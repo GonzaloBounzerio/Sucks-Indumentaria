@@ -10,16 +10,13 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="container-fluid-header">
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Sucks Indumentaria
-              </a>
-            </div>
-          </nav>
-        <ul class="nav nav-pills">
+    <header class="header shadow-sm rounded">
+      <div class="logotipo">
+          <img src="./assets/img/logo.jpg" alt="logo" width="80px">
+          <a href="./index.html">Sucks Indumentaria</a>
+      </div> 
+      <div class="navegadorPags">
+          <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
@@ -30,45 +27,60 @@
               <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
             </li>
           </ul>
+      </div>
     </header>
-    <main>
-        <section class="coleccionSucks">
+    <main class="main">
+        <div class="coleccionSucks">
             <div class="titulo">Colección Sucks</div>
             <div class="imagenesIndex">
-                <img src="./assets/img/coleccion_sucks (1).png" height="350" alt="modeloRemeraSucks1">
-                <img src="./assets/img/coleccion_sucks (4).png" height="350"alt="modeloRemeraSucks2">
-                <img src="./assets/img/coleccion_sucks (5).png"height="350" alt="modeloRemeraSucks3">
-                <img src="./assets/img/coleccion_sucks (6).png" height="350"alt="modeloRemeraSucks4">
+                <img class="shadow" src="./assets/img/coleccion_sucks (1).png" height="350" alt="modeloRemeraSucks1">
+                <img class="shadow" src="./assets/img/coleccion_sucks (4).png" height="350"alt="modeloRemeraSucks2">
+                <img class="shadow" src="./assets/img/coleccion_sucks (5).png"height="350" alt="modeloRemeraSucks3">
+                <img class="shadow" src="./assets/img/coleccion_sucks (6).png" height="350"alt="modeloRemeraSucks4">               
             </div>
-            <div class="botonProductos">
-                <img src="./assets/img/mas.png" height="10px" width="10px">
-                <a href="./pages/productos.html">Ver más</a>
+            <button type="button" class="botonIndex btn btn-light">Ver más</button>
+        </div>
+        <div class="fundadores">
+          <div class="titulo">Los fundadores</div>
+          <div class="contenedorCardsIndex">
+            <div class="card shadow" style="width: 18rem;">
+              <img src="./assets/img/agustin_modelo (1).png" class="card-img-top" alt="Foto de Agustin Modelo">
+              <div class="card-body">
+                <p class="card-text">Agus</p>
+              </div>
             </div>
-        </section>
-        <section class="fundadores">
-            <div class="titulo">Los fundadores</div>
-            <div class="imagenesIndex">
-                <img src="./assets/img/gonzalo_modelo (3).png" height="350"alt="modeloGonzalo">
-                <img src="./assets/img/agustin_modelo (1).png" height="350"alt="modeloAgustin">
+            <div class="card shadow" style="width: 18rem;">
+              <img src="./assets/img/gonzalo_modelo (3).png" class="card-img-top" alt="Foto de Gonzalo Modelo">
+              <div class="card-body">
+                <p class="card-text">Gonza</p>
+              </div>
             </div>
-            <div class="botonNosotros">
-                <img src="./assets/img/mas.png" height="10px" width="10px">
-                <a href="./pages/nosotros.html">Conocé la historia</a>
-            </div>
-        </section>
+          </div>
+          <button type="button" class="botonIndex btn btn-light">Conocenos</button>
+        </div>
     </main>
-    <footer>
-       <p class="frase">Donde podés encontrar lo que buscás sin miedo a lo que digan, donde podés encontrar tu estilo, Sucks Indumentaria</p>
+    <footer class="footer">
+      <div class="contFooter">
        <div class="listaNavFooter"> 
-        <ul>
-            <li><a href="./pages/workwithus.html">Trabajá con nosotros</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-            <li><a href="./pages/newsletter.html">Newsletter</a></li>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
         </ul>
        </div>
        <div clase="fraseFinal">
         Un proyecto de Pietra-Bounzerio
        </div>
+      </div>
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
