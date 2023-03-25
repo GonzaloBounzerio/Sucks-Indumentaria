@@ -18,7 +18,7 @@ ul li{
 body{
     background-color: rgb(249, 255, 170);
     display: grid;
-    grid-template-rows: 85px auto 70px;
+    grid-template-rows: 85px auto auto;
     grid-template-areas: "header" "main" "footer";
 }
 
@@ -47,7 +47,9 @@ header{
 }
 
 footer{
+    border-top: 0.5px dotted rgba(195, 236, 132, 0.822);
     display: flex;
+    bottom: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -59,14 +61,16 @@ footer{
     header{
         position:static;
         height: 150px;
-        font-size: 1rem;
+        font-size: 0.5rem;
         display: grid;
         grid-template-rows: repeat(2,auto);
         grid-template-areas: "logotipo" 
                              "navegadorPags";
         justify-content: center;
     }
+}
 
+@media (max-width:410px){
 
 }
 
@@ -98,6 +102,8 @@ main .titulo{
 .contenedorCardsIndex{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .botonIndex{
@@ -122,7 +128,43 @@ main .titulo{
     .contenedorCardsIndex{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 
 /*Fin Index*/
+
+/*Productos*/
+
+.seccionProductos{
+    margin:20px auto;
+    width: 80%;
+}
+
+.seccionProductos h1{font-size: 2rem;}
+.seccionProductos h2{font-size: 1.5rem;}
+
+.encabezadoProductos{
+    font-size: 1.5rem;
+}
+
+.articulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulo{
+    margin:15px 0;
+}
+
+@media (max-width:550px){
+    .articulos{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+/*Fin Productos*/

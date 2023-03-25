@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
     <title>Contacto</title>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="solapaSuperior">
-        <div class="textoImagen">
-            <div class="textoSuperior">
-                <h1>Sucks Indumentaria</h1>
-                <h2>Tu lugar,tu estilo</h2>
-            </div>
-            <div class="imagenCentro">
-                <img src="../assets/img/logo.jpg" width=100px height=100px>
-            </div>
+    <header class="header shadow-sm rounded">
+        <div class="logotipo">
+            <img src="../assets/img/logo.jpg" alt="logo" width="80px">
+            <a href="../index.html">Sucks Indumentaria</a>
+        </div> 
+        <div class="navegadorPags">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
         </div>
-        <nav class="navegacion">
-            <div class="listaNav">
-                <a href="..//index.html">Inicio</a>
-                <a href="../pages/productos.html">Productos</a>
-                <a href="../pages/nosotros.html">Nosotros</a></li>
-            </div>
-        </nav>
     </header>
     <main class="contactPage">
         <div class="contenedorMapaContacto">
@@ -38,45 +40,41 @@
         <div class="contenedorRedesContacto">
             <div>Nuestras redes...</div>
             <div class="iconosContacto">
-                <div class="iconoContacto">
-                    <a href="https://www.instagram.com/sucks_indumentaria/" target="_blank">
-                    <img src="..//assets/img/ig.ico" width="70px" alt="logo instagram">
-                    </a>
+                <div class="iconoContacto ig">
+                  <iconify-icon icon="skill-icons:instagram" width="64" height="64"></iconify-icon>             
                 </div>
-                <div class="iconoContacto">
-                    <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank">
-                    <img src="..//assets/img/facebook.ico" width="70px" alt="logo facebook">
-                    </a>
+                <div class="iconoContacto face">
+                  <iconify-icon icon="logos:facebook" width="64" height="64"></iconify-icon>
                 </div>
-                <div class="iconoContacto">
-                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1376511889%3A1678325486080663&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWnogHfA07UTDvoCgkSv6DrsHF0TZhDzJmRqL2aT67qlc0HU1rNZJBalWkUr5nGaEoUKbeK1L55I" target="_blank">
-                    <img src="..//assets/img/gmail.ico" width="85px" alt="enviar mail">
-                    </a>
+                <div class="iconoContacto gmail">
+                  <iconify-icon icon="logos:google-gmail" width="64" height="64"></iconify-icon>
                 </div>
-                <div class="iconoContacto">
-                    <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="..//assets/img/whatsapp.ico" width="85px" alt="enviar whatsapp">
-                    </a>
+                <div class="iconoContacto wpp">
+                  <iconify-icon icon="logos:whatsapp-icon" width="64" height="64"></iconify-icon>
                 </div>
-            </div>
-            <div class="logoContacto">
-                <img src="..//assets/img/logo.jpg" width="300px" alt="logo sucks_indumentaria">
             </div>
         </div>
     </main>
-    <footer>
-        <p class="frase">Donde podés encontrar lo que buscás sin miedo a lo que digan, donde podés encontrar tu estilo, Sucks Indumentaria</p>
-        <div class="listaNavFooter"> 
-         <ul>
-             <li><a href="./workwithus.html">Trabajá con nosotros</a></li>
-             <li><a href="#">Contacto</a></li>
-             <li><a href="./newsletter.html">Newsletter</a></li>
-         </ul>
+    <footer class="footer">
+        <div class="contFooter">
+         <div class="listaNavFooter"> 
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/workwithus.html">Trabajá con Nosotros</a>
+            </li>
+          </ul>
+         </div>
+         <div clase="fraseFinal">
+          Un proyecto de Pietra-Bounzerio
+         </div>
         </div>
-        <div clase="fraseFinal">
-         Un proyecto de Pietra-Bounzerio
-        </div>
-    </footer>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
