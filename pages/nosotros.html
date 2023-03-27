@@ -10,24 +10,25 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="solapaSuperior">
-        <div class="textoImagen">
-            <div class="textoSuperior">
-                <h1>Sucks Indumentaria</h1>
-                <h2>Tu lugar,tu estilo</h2>
-            </div>
-            <div class="imagenCentro">
-                <img src="../assets/img/logo.jpg" width=100px height=100px>
-            </div>
+    <header class="header shadow-sm rounded">
+        <div class="logotipo">
+            <img src="../assets/img/logo.jpg" alt="logo" width="80px">
+            <a href="../index.html">Sucks Indumentaria</a>
+        </div> 
+        <div class="navegadorPags">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+            </li>
+            </ul>
         </div>
-        <nav class="navegacion">
-            <div class="listaNav">
-                <a href="..//index.html">Inicio</a>
-                <a href="../pages/productos.html">Productos</a>
-                <a href="#">Nosotros</a></li>
-            </div>
-        </nav>
-    </header>
+      </header>
     <main class="fondoNosotros">
         <section class="textoLargo">
                 <h3>Cómo nos conocimos</h3>
@@ -47,7 +48,6 @@
                 <div class="contenedorImagenMedioTexto">
                     <div class="imagenMedioTexto">
                         <img src="..//assets/img/foto_con_agus (3).jpg" width="400px" alt="agus y yo">
-                        <img src="..//assets/img/foto_con_agus (5).jpg" height="300px" alt="agus y yo">
                     </div>
                 </div>
                 <h3>Unite</h3>
@@ -59,17 +59,21 @@
                 </div>
         </section>
     </main>
-    <footer>
-        <p class="frase">Donde podés encontrar lo que buscás sin miedo a lo que digan, donde podés encontrar tu estilo, Sucks Indumentaria</p>
-        <div class="listaNavFooter"> 
-         <ul>
-             <li><a href="./workwithus.html">Trabajá con nosotros</a></li>
-             <li><a href="./contacto.html">Contacto</a></li>
-             <li><a href="./newsletter.html">Newsletter</a></li>
-         </ul>
-        </div>
-        <div clase="fraseFinal">
-         Un proyecto de Pietra-Bounzerio
+    <footer class="footer">
+        <div class="contFooter">
+         <div class="listaNavFooter"> 
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workwithus.html">Trabajá con Nosotros</a>
+            </li>
+          </ul>
+         </div>
+         <div clase="fraseFinal">
+          Un proyecto de Pietra-Bounzerio
+         </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

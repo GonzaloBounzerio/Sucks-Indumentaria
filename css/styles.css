@@ -209,27 +209,45 @@ main .titulo{
 }
 /*Fin Contacto*/
 
-/*Newsletter*/
+/*Nosotros*/
 
-.main-neswletter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+
+/*Fin Nosotros*/
+
+/*WorkWithUs*/
+
+textarea{
+    resize: none;
 }
 
 .formulario{
+    width: 70%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    margin-left: 50px;
+}
+
+.botonesForm{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.textoForm{
+    font-size: 30px;
+    margin:30px
+}
+
+.imagenForm{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.contenedorForm{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr auto;
     align-items: center;
-    justify-content: center;
-    height: 50vh;
 }
-
-.textoNews{
-    font-size: 25px;
-    margin: 20px;
-}
-
-/*Fin Newsletter*/
+/*Fin WorkWithUs*/

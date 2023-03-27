@@ -10,74 +10,82 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="solapaSuperior">
-        <div class="textoImagen">
-            <div class="textoSuperior">
-                <h1>Sucks Indumentaria</h1>
-                <h2>Tu lugar,tu estilo</h2>
-            </div>
-            <div class="imagenCentro">
-                <img src="../assets/img/logo.jpg" width=100px height=100px>
-            </div>
+    <header class="header shadow-sm rounded">
+        <div class="logotipo">
+            <img src="../assets/img/logo.jpg" alt="logo" width="80px">
+            <a href="../index.html">Sucks Indumentaria</a>
+        </div> 
+        <div class="navegadorPags">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
         </div>
-        <nav class="navegacion">
-            <div class="listaNav">
-                <a href="..//index.html">Inicio</a>
-                <a href="../pages/productos.html">Productos</a>
-                <a href="../pages/nosotros.html">Nosotros</a></li>
-            </div>
-        </nav>
     </header>
-    <main>
-        <div>
-        <form>
-            <div>
-            <label for="nombre"></label>
-            <input type="text" minlength="3" id="text" name="nombre" placeholder="Nombre..." required> 
-            </div>
-            <div>
-            <label for="apellido"></label>
-            <input type="text" minlength="3" name="apellido" placeholder="Apellido..." required>
-            </div>
-            <div>
-            <select name="Sexo" required>
-                <option value="S">Sexo</option>
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-                <option value="O">Otros</option>
-            </select>
-            </div>
-        </form>
-        <form>
-            <label for="mail"></label>
-            <input type="email" name="mail" placeholder="email@999.com" required>
-        </form>
-        <div>
-            <img src="" alt="subir cv">
-            <h4>Subir CV</h4>
-        </div>
-        <form>
-            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Cuéntanos de tí"></textarea>
-        </form>
-        <form>
-            <input id="enviar" type="submit" value="Enviar">
-            <input id="reset" type="reset" value="Limpiar">
-        </form>
+    <main class="contenedorForm">
+        <div class="textoForm">Completa el formulario para ser parte de la familia Sucks</div>
+        <img class="imagenForm" src="..//assets/img/logo.jpg" alt="logo" width="350px">
+        <div class="formulario">
+            <form>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="pepe" required>
+                    <label for="floatingInput">Nombre</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Correo electrónico</label>
+                  </div>
+                <div>
+                  <select class="form-select mb-3" aria-label="Default select example" required>
+                    <option selected disabled value="">Sexo...</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Subir CV (opcional)</label required>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">Contanos de vos</label>
+                  </div>
+                <div class="botonesForm">
+                    <div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                    <div>
+                        <button type="reset" class="btn btn-secondary">Limpiar</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
-    <footer>
-        <p class="frase">Donde podés encontrar lo que buscás sin miedo a lo que digan, donde podés encontrar tu estilo, Sucks Indumentaria</p>
-        <div class="listaNavFooter"> 
-         <ul>
-             <li><a href="#">Trabajá con nosotros</a></li>
-             <li><a href="./contacto.html">Contacto</a></li>
-             <li><a href="./newsletter.html">Newsletter</a></li>
-         </ul>
+    <footer class="footer">
+        <div class="contFooter">
+         <div class="listaNavFooter"> 
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trabajá con Nosotros</a>
+            </li>
+          </ul>
+         </div>
+         <div clase="fraseFinal">
+          Un proyecto de Pietra-Bounzerio
+         </div>
         </div>
-        <div clase="fraseFinal">
-         Un proyecto de Pietra-Bounzerio
-        </div>
-    </footer>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
