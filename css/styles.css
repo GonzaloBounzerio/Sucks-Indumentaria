@@ -78,59 +78,16 @@ footer{
 
 /*Index*/
 
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.coleccionSucks{
-    margin-top: 20px;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
+.galeriaIndex{
+    display: none;
 }
 
-main .titulo{
-    font-size: 1.8rem;
-}
-
-.fundadores{
-    margin:20px auto;
-    text-align: center;
-}
-
-.contenedorCardsIndex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.botonIndex{
-    margin:10px
-}
-
-@media (max-width:500px){
+@media (max-width:991px) {
+    .galeriaIndex{
+        display: grid;
+    }
     .imagenesIndex{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width:830px){
-    .coleccionSucks{
-        margin-top: 70px;
-        width: 400px;
-    }
-}
-
-@media (max-width:710px){
-    .contenedorCardsIndex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
 }
 
@@ -139,22 +96,7 @@ main .titulo{
 /*Productos*/
 
 .seccionProductos{
-    margin:20px auto;
-    width: 80%;
-}
-
-.seccionProductos h1{font-size: 2rem;}
-.seccionProductos h2{font-size: 1.5rem;}
-
-.encabezadoProductos{
-    font-size: 1.5rem;
-}
-
-.articulos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    border: 1px solid black ;
 }
 
 .articulo{
@@ -211,6 +153,18 @@ main .titulo{
 
 /*Nosotros*/
 
+.contNosotros .row{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.contNosotros img{
+    border: 13px groove #6219ba;
+}
+
+.contNosotros h3{
+    font-size: 35px;
+}
 
 
 /*Fin Nosotros*/

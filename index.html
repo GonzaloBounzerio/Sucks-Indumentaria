@@ -10,54 +10,78 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header shadow-sm rounded">
-      <div class="logotipo">
-          <img src="./assets/img/logo.jpg" alt="logo" width="80px">
-          <a href="./index.html">Sucks Indumentaria</a>
-      </div> 
-      <div class="navegadorPags">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-      </div>
-    </header>
+  <header class="header shadow-sm rounded">
+    <div class="logotipo">
+        <img src="./assets/img/logo.jpg" alt="logo" width="80px">
+        <a href="#">Sucks Indumentaria</a>
+    </div> 
+    <div class="navegadorPags">
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+    </div>
+  </header>
     <main class="main">
-      <div class="contenedorMain">
-        <div class="coleccionSucks">
-            <div class="titulo">Colección Sucks</div>
-            <div class="imagenesIndex">
-                <img class="shadow" src="./assets/img/coleccion_sucks (1).png" height="350" alt="modeloRemeraSucks1">
-                <img class="shadow" src="./assets/img/coleccion_sucks (4).png" height="350"alt="modeloRemeraSucks2">
-                <img class="shadow" src="./assets/img/coleccion_sucks (5).png"height="350" alt="modeloRemeraSucks3">
-                <img class="shadow" src="./assets/img/coleccion_sucks (6).png" height="350"alt="modeloRemeraSucks4">               
+      <div class="container">
+        <div class="coleccionSucks row ">
+            <div class="h3 text-center">Colección Sucks</div>
+            <div class="imagenesIndex text-center">
+                <img class="shadow col rounded" src="./assets/img/coleccion_sucks (1).png" height="350" alt="modeloRemeraSucks1">
+                <img class="shadow col rounded" src="./assets/img/coleccion_sucks (4).png" height="350"alt="modeloRemeraSucks2">
+                <img class="shadow col rounded" src="./assets/img/coleccion_sucks (5).png"height="350" alt="modeloRemeraSucks3">
+                <img class="shadow col rounded" src="./assets/img/coleccion_sucks (6).png" height="350"alt="modeloRemeraSucks4">               
             </div>
-            <a class="botonIndex btn btn-primary btn-light" href="./pages/productos.html" role="button">Ver más</a>
+            <div id="carouselExampleControls" class="carousel slide galeriaIndex" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/coleccion_sucks (1).png" class="d-block w-100" alt="modeloRemeraSucks1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/coleccion_sucks (4).png" class="d-block w-100" alt="modeloRemeraSucks2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/coleccion_sucks (5).png" class="d-block w-100" alt="modeloRemeraSucks3">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/coleccion_sucks (6).png" class="d-block w-100" alt="modeloRemeraSucks4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <a class="m-2 btn btn-primary btn-light col-md-2 col-xs-4 mx-auto" href="./pages/productos.html" role="button">Ver más</a>
         </div>
-        <div class="fundadores">
-          <div class="titulo">Los fundadores</div>
-          <div class="contenedorCardsIndex">
-            <div class="card shadow" style="width: 18rem;">
+        <div class="fundadores row">
+          <div class="h3 text-center">Los fundadores</div>
+          <div class="contenedorCardsIndex row text-center justify-content-center">
+            <div class="card col-md-4 col-xs-12 shadow">
               <img src="./assets/img/agustin_modelo (1).png" class="card-img-top" alt="Foto de Agustin Modelo">
               <div class="card-body">
                 <p class="card-text">Agus</p>
               </div>
             </div>
-            <div class="card shadow" style="width: 18rem;">
+            <div class="card col-md-4 col-xs-12 shadow">
               <img src="./assets/img/gonzalo_modelo (3).png" class="card-img-top" alt="Foto de Gonzalo Modelo">
               <div class="card-body">
                 <p class="card-text">Gonza</p>
               </div>
             </div>
           </div>
-          <a class="botonIndex btn btn-primary btn-light" href="./pages/nosotros.html" role="button">Conocenos</a>
+          <a class="m-2 btn btn-primary btn-light col-md-2 col-xs-4 mx-auto" href="./pages/nosotros.html" role="button">Conocenos</a>
         </div>
       </div>
     </main>
