@@ -29,45 +29,46 @@
             </ul>
         </div>
     </header>
-    <main class="contenedorForm">
-        <div class="textoForm">Completa el formulario para ser parte de la familia Sucks</div>
-        <div class="formulario">
-            <form>
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="pepe" required>
-                    <label for="floatingInput">Nombre</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                    <label for="floatingInput">Correo electrónico</label>
-                  </div>
-                <div>
-                  <select class="form-select mb-3" aria-label="Default select example" required>
-                    <option selected disabled value="">Sexo...</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Femenino</option>
-                    <option value="3">Otro</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Subir CV (opcional)</label required>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
-                    <label for="floatingTextarea2">Contanos de vos</label>
-                  </div>
-                <div class="botonesForm">
-                    <div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+    <main class="contenedorForm container">
+        <div class="textoForm h3 m-3">Completa el formulario para ser parte de la familia Sucks</div>
+        <div class="row">
+          <div class="formulario col align-self-center">
+              <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="pepe" required>
+                      <label for="floatingInput">Nombre</label>
                     </div>
-                    <div>
-                        <button type="reset" class="btn btn-secondary">Limpiar</button>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                      <label for="floatingInput">Correo electrónico</label>
                     </div>
-                </div>
-            </form>
+                  <div>
+                    <select class="form-select mb-3" aria-label="Default select example" required>
+                      <option selected disabled value="">Sexo...</option>
+                      <option value="1">Masculino</option>
+                      <option value="2">Femenino</option>
+                      <option value="3">Otro</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="formFile" class="form-label">Subir CV (opcional)</label required>
+                      <input class="form-control" type="file" id="formFile">
+                  </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                      <label for="floatingTextarea2">Contanos de vos</label>
+                    </div>
+                  <div class="botonesForm row row-cols-12">
+                      <div class="col text-center">
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                      <div class="col text-center">
+                          <button type="reset" class="btn btn-secondary">Limpiar</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
         </div>
-        <img class="imagenForm" src="..//assets/img/logo.jpg" alt="logo" width="350px">
     </main>
     <footer class="footer">
         <div class="contFooter">
