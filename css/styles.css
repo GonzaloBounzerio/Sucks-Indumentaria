@@ -59,7 +59,7 @@ footer{
     background-color: beige;
 }
 
-@media (max-width:820px){
+/*@media (max-width:820px){
     header{
         position:static;
         height: 150px;
@@ -70,11 +70,7 @@ footer{
                              "navegadorPags";
         justify-content: center;
     }
-}
-
-@media (max-width:410px){
-
-}
+}*/
 
 /*Index*/
 
@@ -95,21 +91,6 @@ footer{
 
 /*Productos*/
 
-.seccionProductos{
-    border: 1px solid black ;
-}
-
-.articulo{
-    margin:15px 0;
-}
-
-@media (max-width:550px){
-    .articulos{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-}
 
 /*Fin Productos*/
 
