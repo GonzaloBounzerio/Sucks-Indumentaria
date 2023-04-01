@@ -104,12 +104,6 @@ footer{
     font-size: 35px;
 }
 
-@media (max-width:768px){
-    .bloqueImagen_2 img{
-        height: 275px;
-    }
-}
-
 /*Fin Nosotros*/
 
 /*WorkWithUs*/
