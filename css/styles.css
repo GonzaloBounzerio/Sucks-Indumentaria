@@ -93,7 +93,10 @@ footer{
 
 .contNosotros .row{
     font-size: 20px;
-    margin-top: 10px;
+}
+
+.contNosotros div{
+    border: 1px solid black;
 }
 
 .contNosotros img{
