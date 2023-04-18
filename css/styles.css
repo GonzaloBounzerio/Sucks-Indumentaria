@@ -68,8 +68,6 @@ footer {
   }
 }
 /*Fin Index*/
-/*Productos*/
-/*Fin Productos*/
 /*Contacto*/
 .publicidadPantallaChica {
   display: none;
@@ -91,11 +89,9 @@ footer {
 .contNosotros .row {
   font-size: 20px;
 }
-
 .contNosotros img {
   border: 13px groove #6219ba;
 }
-
 .contNosotros h3 {
   font-size: 35px;
 }

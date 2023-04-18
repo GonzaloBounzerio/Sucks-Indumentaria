@@ -1,4 +1,8 @@
+//Variables
 $color_ppal:#f8f9fa;
+$color_fondo:rgb(249, 255, 170);
+$color_letra_main:black;
+$color_borde:rgba(195, 236, 132, 0.822);
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
 *{
@@ -9,7 +13,7 @@ $color_ppal:#f8f9fa;
 }
 
 a{
-    color: black;
+    color:$color_letra_main;
     text-decoration: none;
 }
 
@@ -18,7 +22,7 @@ ul li{
 }
 
 body{
-    background-color: rgb(249, 255, 170);
+    background-color:$color_fondo ;
     display: grid;
     grid-template-rows: auto 2fr 70px;
     grid-template-areas: "header" "main" "footer";
@@ -34,7 +38,7 @@ header{
 footer{
     position: fixed;
     width: 100%;
-    border-top: 0.5px dotted rgba(195, 236, 132, 0.822);
+    border-top: 0.5px dotted $color_borde;
     display: flex;
     bottom: 0;
     justify-content: center;
@@ -51,7 +55,6 @@ footer{
 .grow:hover { 
     transform: scale(1.1); 
 }
-
 /*Index*/
 
 
@@ -73,11 +76,6 @@ footer{
 }
 
 /*Fin Index*/
-
-/*Productos*/
-
-
-/*Fin Productos*/
 
 /*Contacto*/
 
@@ -101,17 +99,12 @@ footer{
 
 /*Nosotros*/
 
-.contNosotros .row{
-    font-size: 20px;
+.contNosotros{
+    .row{font-size: 20px;}
+    img{border: 13px groove #6219ba;}
+    h3{font-size: 35px;}
 }
 
-.contNosotros img{
-    border: 13px groove #6219ba;
-}
-
-.contNosotros h3{
-    font-size: 35px;
-}
 
 /*Fin Nosotros*/
 
